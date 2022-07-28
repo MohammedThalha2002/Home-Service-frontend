@@ -1,0 +1,295 @@
+.home-head h1,
+h2,
+h3,
+h4 {
+    color: black;
+}
+
+#services-title-desc {
+    color: black;
+}
+
+.home-head h2 {
+    font-size: 3.5rem;
+}
+
+.home-head {
+    width: 90%;
+    margin: auto;
+}
+
+.home-head header h1 {
+    font-weight: bold;
+    font-size: 3.6rem;
+    color: black;
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+/* BoxChips section */
+
+.box-chips {
+    display: flex;
+    cursor: pointer;
+}
+
+/* All Services */
+
+.all-services {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.5px solid black;
+    margin: 2rem 2rem 2rem 0rem;
+    align-items: center;
+}
+
+.all-services:hover {
+    border: 2.5px solid #43D1B8;
+}
+
+.all-services:hover h4 {
+    color: #43D1B8;
+}
+
+.all-services .icon {
+    z-index: -1;
+    background-color: #43D1B8;
+    height: 77px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-services .icon img {
+    height: 65px;
+    padding: 0.7rem;
+}
+
+.box-chips-title h4 {
+    color: black;
+    padding-left: 15px;
+    font-size: 1.8rem;
+}
+
+/* Cleaning */
+
+.cleaning {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.5px solid black;
+    margin: 2rem;
+    align-items: center;
+}
+
+.cleaning .icon {
+    z-index: -1;
+    background-color: #8BC53E;
+    height: 77px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cleaning .icon img {
+    height: 65px;
+    padding: 0.7rem;
+}
+
+
+.cleaning:hover {
+    border: 2.5px solid #8BC53E;
+}
+
+.cleaning:hover h4 {
+    color: #8BC53E;
+}
+
+
+/* Furniture */
+
+.furniture {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.5px solid black;
+    margin: 2rem;
+    align-items: center;
+}
+
+.furniture .icon {
+    z-index: -1;
+    background-color: #c53e67;
+    height: 77px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.furniture .icon img {
+    height: 65px;
+    padding: 0.7rem;
+}
+
+.furniture:hover {
+    border: 2.5px solid #c53e67;
+}
+
+.furniture:hover h4 {
+    color: #c53e67;
+}
+
+/* Home page services section */
+
+.home-page-services {
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+.services-title h2 {
+    font-size: 3.2rem;
+    color: black;
+}
+
+.services-title h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.services-cards {
+    margin-top: 2rem;
+    display: flex;
+}
+
+
+.service-name h4 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.services-cards img {
+    height: 200px;
+}
+
+.cards {
+    margin: 2rem 2rem 2.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cards h4 {
+    color: black;
+}
+
+.cards:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Ad block-1 */
+.ad-block {
+    min-height: 37vh;
+    background-color: rgba(19, 28, 39, 1);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-block h2 {
+    color: white;
+    padding: 0.2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.ad-block h3 {
+    color: white;
+    padding: 0.2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.ad-block h4 {
+    color: #43D1B8;
+    font-size: 180%;
+}
+
+/* Become a Handy section */
+
+.become-handy {
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.become-handy .wordings {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+.wordings h3 {
+    color: black;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.wordings h4 {
+    font-size: 1.8rem;
+}
+
+.wordings button {
+    margin-top: 2rem;
+    background-color: #43D1B8;
+    height: 60px;
+    width: 250px;
+    font-size: 2rem;
+}
+
+.wordings button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #43d1b787;
+}
+
+.become-handy .become-a-handy-img {
+    display: flex;
+    height: 450px;
+}
+
+/* Our Partners section */
+
+.our-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+.our-partners .title {
+    padding-top: 6rem;
+    font-size: 180%;
+}
+
+.partners-img img {
+    width: 45vh;
+}
+
+.partners-img {
+    padding: 6rem;
+    display: flex;
+}

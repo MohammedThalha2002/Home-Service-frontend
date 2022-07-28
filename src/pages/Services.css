@@ -1,0 +1,141 @@
+.cover-img {
+    min-height: 45vh;
+    background-image: url('../assets/homescreen.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-cover-img {
+    height: 25vh;
+    width: 50vw;
+    background-color: white;
+    border-radius: 4px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+#title-cover-img h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#title-cover-img select {
+    font-size: 2rem;
+    height: 5rem;
+    width: 40vw;
+    padding: 1rem;
+}
+
+.services-bottom {
+    margin: 3rem;
+    display: flex;
+}
+
+.services-left {
+    min-height: 60vh;
+    flex: 0.8 1 30rem;
+    padding: 3rem 5rem 5rem 5rem;
+}
+
+
+#services-left h2,
+h3,
+Link {
+    text-align: left;
+    color: black;
+}
+
+#services-left h2 {
+    font-size: 3.2rem;
+}
+
+#services-left h3 {
+    font-size: 2rem;
+    margin: 3rem 0rem 3rem 0rem;
+    font-weight: 400;
+    color: black;
+}
+
+#services-left h3:hover {
+    font-size: 2rem;
+    margin: 3rem 0rem 3rem 0rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.services-right {
+    margin-top: 12rem;
+    min-height: 200vh;
+    flex: 2.2 1 60rem;
+}
+
+/* Cards  */
+
+
+#service-right-title h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-top: 10rem;
+    color: black;
+}
+
+#popular #service-right-title h2 {
+    margin-top: 3rem;
+    color: black;
+}
+
+.services-right-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-right-card {
+    margin: 2rem 2rem 2.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.services-right-card img {
+    height: 200px;
+}
+
+.services-right-card h4 {
+    font-size: 1.8rem;
+    margin: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.services-right-card:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.tags-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tags-section h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    flex: 1 1 30rem;
+    margin: 1rem 0rem 1rem 0rem;
+    color: black;
+}

@@ -1,0 +1,28 @@
+/* Footer section */
+
+.footer-wrapper {
+    background-color: rgba(19, 28, 39, 1);
+    color: white;
+    min-height: 20vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper h1 {
+    flex: 1 1 40rem;
+    padding-left: 2rem;
+}
+
+.footer-wrapper ul {
+    display: flex;
+    flex: 1 1 5rem;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper ul li a {
+    padding: 2rem;
+}

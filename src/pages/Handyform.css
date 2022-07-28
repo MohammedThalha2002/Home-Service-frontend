@@ -1,0 +1,70 @@
+.handyform {
+    min-height: 80vh;
+    width: 100%;
+}
+
+.handyform-head {
+    margin: 4rem;
+    padding: 4rem;
+    width: 90%;
+    min-height: 75vh;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px -10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: #131c27;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.form input {
+    width: 50vw;
+    height: 4rem;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+}
+
+.name-form #name{
+    font-size: 1.5rem;
+}
+
+.form select {
+    width: 50vw;
+    height: 4rem;
+    font-family: 'Poppins';
+}
+
+.checkbox {
+    display: flex;
+    padding-left: 1.5rem;
+}
+
+.checkbox #checkbox {
+    margin-right: 1.5rem;
+}
+
+#become-a-handy-submit {
+    background-color: white;
+    color: #131c27;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+#become-a-handy-submit:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.submit-btn-handyform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

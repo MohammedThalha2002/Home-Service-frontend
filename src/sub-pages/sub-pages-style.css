@@ -1,0 +1,132 @@
+.sub-pages-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.sub-pages-card-content h1,
+h2,
+h3,
+h4,
+li {
+    color: white;
+}
+
+.sub-page-cover-img {
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cleaner-cover-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../assets/cleaning-sub-page.png");
+}
+
+.painter-cover-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../assets/painting-service-cover-img.png");
+}
+
+.plumber-cover-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../assets/plumbing-service-cover-img.png");
+}
+
+.electrician-cover-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../assets/electrical-service-cover-img.png");
+}
+
+.home-service-cover-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../assets/handyman-service-cover-img.png");
+}
+
+.sub-pages-card-content {
+    position: relative;
+    border: 1px solid black;
+    padding: 2.5rem;
+    height: 50rem;
+    width: 45rem;
+    background-color: #232323;
+    border-radius: 14px;
+}
+
+#name {
+    font-size: 3rem;
+}
+
+#sub-pages-body-heading {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 3rem;
+    color: #232323;
+}
+
+.increase-radius{
+    display: flex;
+    justify-content: space-between;
+}
+
+#radius-search{
+    height: 3.5rem;
+    margin: 3rem;
+    border-radius: 4px;
+    border: 2px solid #232323;
+    padding: 0.4rem;
+}
+
+.service-man-details li {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.rating {
+    margin: 2rem 0rem 2rem 0rem;
+    display: flex;
+    padding: 0.6rem;
+    background-color: #393939;
+    width: 30rem;
+    height: 4rem;
+    border-radius: 22px;
+}
+
+.rating h2 {
+    font-size: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.stars {
+    display: flex;
+}
+
+.clip-star {
+    background: whitesmoke;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+
+.checked {
+    background: gold;
+}
+
+.hire-me-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+}
+
+.hire-me {
+    color: white;
+    background-color: lightcoral;
+    border-radius: 22px;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+}
+
+.hire-me:hover {
+    color: white;
+    transform: translateY(-2px);
+}
