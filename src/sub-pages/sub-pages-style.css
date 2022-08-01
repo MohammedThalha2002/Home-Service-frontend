@@ -117,16 +117,12 @@ li {
     bottom: 2rem;
     right: 2rem;
     display: flex;
-}
-
-.hire-me {
-    color: white;
     background-color: lightcoral;
+    color: white;
     border-radius: 22px;
     padding: 0.6rem 1.5rem 0.6rem 1.5rem;
 }
 
-.hire-me:hover {
-    color: white;
+.hire-me-btn:hover {
     transform: translateY(-2px);
 }

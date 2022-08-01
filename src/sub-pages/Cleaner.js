@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
+import sendEmail from '../api/sendEmail';
 import './sub-pages-style.css'
 
 function Cleaner() {
-    const baseURL = "http://192.168.0.113:8080/users/cleaner"
-    const nearbyUsersUrl = "http://192.168.0.113:8080/users/cleaner/outdistance"
+    const baseURL = "http://localhost:8080/users/cleaner"
+    const nearbyUsersUrl = "http://localhost:8080/users/cleaner/outdistance"
     const [allUserData, setallUserData] = useState([]);
     const [nearbyUserData, setnearbyUserData] = useState([]);
 
@@ -69,13 +70,15 @@ function Cleaner() {
                 <div className="job-description">
                     <h2>"{data.desc}"</h2>
                 </div>
+                <button className="hire-me-btn" onClick={(e) => sendEmail(data.email)}>
+                    Hire me
+                </button>
             </div>
         )
     })
 
     const allNearByUsers = nearbyUserData.map((data, index) => {
         return (
-
             <div className='sub-pages-card-content' key={data.id}>
                 <h1 id='name'>{data.name}</h1>
                 <ul className='service-man-details'>
@@ -98,6 +101,9 @@ function Cleaner() {
                 <div className="job-description">
                     <h2>"{data.desc}"</h2>
                 </div>
+                <button className="hire-me-btn" onClick={(e) => sendEmail(data.email)}>
+                    Hire me
+                </button>
             </div>
         )
     })

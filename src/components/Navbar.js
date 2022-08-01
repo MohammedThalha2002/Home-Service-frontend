@@ -12,7 +12,7 @@ function NavBar() {
                     <li><a href="/home">Home</a></li>
                     <li><a href="/services">Services</a></li>
                     <li><a href="/become-a-handy">Become a Handy</a></li>
-                    <li><a href="/Login">Login</a></li>
+                    <li><a href="/login">Login</a></li>
                 </ul>
             </nav>
             <div id="services-hover-box">
