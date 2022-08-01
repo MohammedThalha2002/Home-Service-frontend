@@ -49,7 +49,7 @@ html {
 .navbar-links {
     display: flex;
     justify-content: space-around;
-    flex: 1 1 40rem;
+    flex: 1 1 45rem;
 }
 
 .navbar-links a {
