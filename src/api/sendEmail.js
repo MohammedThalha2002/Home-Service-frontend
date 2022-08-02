@@ -9,7 +9,11 @@ const sendEmail = async (email) => {
                 email: email //radius to serach for the handymans
             }
         }).then((res) => {
-            alert("Mail sent Successfully")
+            if(res === "success"){
+                alert("Mail Sent Successfully")
+            } else {
+                alert("Something went wrong")
+            }
         })
     } catch (error) {
         console.log(error)

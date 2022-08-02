@@ -10,7 +10,7 @@ import Painter from './sub-pages/Painter.js';
 import Electrician from './sub-pages/Electrician';
 import Plumber from './sub-pages/Plumber';
 import HomeService from './sub-pages/HomeService';
-import Login from './components/Login.js';
+import Contacts from './pages/Contacts.js';
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/services' element={<Services />} />
           <Route path='/become-a-handy' element={<HandyForm />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/contacts' element={<Contacts />} />
           <Route path='/services/cleaner' element={<Cleaner />} />
           <Route path='/services/painter' element={<Painter />} />
           <Route path='/services/electrician' element={<Electrician />} />

@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
 import './sub-pages-style.css'
+import sendEmail from '../api/sendEmail';
 
 
 function Plumber() {
-    const baseURL = "http://192.168.0.113:8080/users/plumber"
-    const nearbyUsersUrl = "http://192.168.0.113:8080/users/plumber/outdistance"
+    const baseURL = "http://localhost:8080/users/plumber"
+    const nearbyUsersUrl = "http://localhost:8080/users/plumber/outdistance"
     const [allUserData, setallUserData] = useState([]);
     const [nearbyUserData, setnearbyUserData] = useState([]);
 
@@ -101,9 +102,9 @@ function Plumber() {
                 <div className="job-description">
                     <h2>"{data.desc}"</h2>
                 </div>
-                <div className="hire-me-btn">
-                    <button className="hire-me">Hire Me</button>
-                </div>
+                <button className="hire-me-btn" onClick={(e) => sendEmail(data.email)}>
+                    Hire me
+                </button>
             </div>
         )
     })

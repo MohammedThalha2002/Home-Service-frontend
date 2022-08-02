@@ -3,13 +3,10 @@ import './Handyform.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const baseUrl = axios.create({
-    baseURL: "http://192.168.0.113:8080",
-});
 
 
 function HandyForm() {
-    const url = 'http://192.168.0.113:8080/create'
+    const url = 'http://localhost:8080/create'
     const [lat, setLat] = useState(0);
     const [lon, setLon] = useState(0);
     const [formValue, setformValue] = useState({
