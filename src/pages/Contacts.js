@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function Contacts() {
 
-    const url = 'http://localhost:8080/contact'
     const navigate = useNavigate();
     const [formValue, setformValue] = useState({
         name: '',
@@ -22,32 +21,28 @@ function Contacts() {
     const submit = async (e) => {
         e.preventDefault();
         try {
-            let config = {
-                headers: {
-                    "Content-Type": "application/json",
-                    'Access-Control-Allow-Origin': '*',
+            await axios.post("http://localhost:5000/contact", {
+                params: {
+                    name : formValue.name,
+                    message: formValue.suggestions,
+                    email: formValue.email 
                 }
-            }
-            // make axios post request
-            axios.post(url, {
-                name: formValue.name,
-                email: formValue.email,
-                suggestions: formValue.suggestions,
-            }, config).then(res => {
-                console.log(res.status)
-                alert("Sucess")
-                navigate("/home")
+            }).then((res) => {
+                if(res === "success"){
+                    alert("Mail Sent Successfully")
+                } else {
+                    alert("Something went wrong")
+                }
             })
         } catch (error) {
             console.log(error)
-            alert("Something went wrong")
         }
     }
 
     return (
         <section class="handyform">
             <div class="handyform-head">
-                <form>
+                <form onSubmit={(e) => submit}>
                     <div class="name-form form">
                         <label for="name" >Name : </label>
                         <br />
@@ -62,17 +57,16 @@ function Contacts() {
                         <input type="email" name="email" id="email" alt="enter your email" value={formValue.email}
                             onChange={(e) => handleChange(e)} required />
                     </div>
-                    <div class="sugeestions form">
-                        <label for="sugeestions" >Suggestions : </label>
+                    <div class="suggestions form">
+                        <label for="suggestions" >Suggestions : </label>
                         <br />
                         <br />
-                        <input type="text" name="sugeestions" id="sugeestions" alt="Enter your year of experience" value={formValue.suggestions}
+                        <input type="text" name="suggestions" id="suggestions" alt="Enter your sugesstions" value={formValue.suggestions}
                             onChange={(e) => handleChange(e)} required />
                     </div>
-                    <div class="agreement-form checkbox">
-                        <input type="checkbox" name="checkbox" id="checkbox" required />
-                        <label for="checkbox">Agree to your privacy policy </label>
-                    </div>
+                    <br />
+                    <br />
+                    <br />
                     <div className='submit-btn-handyform'>
                         <button id='become-a-handy-submit'>Sumbit</button>
                     </div>
