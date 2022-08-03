@@ -3,6 +3,33 @@
     width: 100%;
 }
 
+.cover-image {
+    min-height: 45vh;
+    background-image: url('../assets/cover-img-gif.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover-image-black-box{
+    background-color: #131c27;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cover-image-black-box h2{
+    font-size: 3rem;
+    margin: 2rem 8rem 2rem 8rem;
+}
+.cover-image-black-box h4{
+    font-size: 2rem;
+    margin: 2rem 8rem 2rem 8rem;
+    font-weight: 500;
+}
+
+
 .handyform-head {
     margin: 4rem;
     padding: 4rem;
@@ -30,7 +57,7 @@ label {
     font-size: 1.5rem;
 }
 
-.name-form #name{
+.name-form #name {
     font-size: 1.5rem;
 }
 

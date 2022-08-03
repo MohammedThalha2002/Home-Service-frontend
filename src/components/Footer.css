@@ -3,11 +3,27 @@
 .footer-wrapper {
     background-color: rgba(19, 28, 39, 1);
     color: white;
-    min-height: 20vh;
+    min-height: 35vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin: auto;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.footer-wrapper hr {
+    width: 95%;
+}
+
+.footer-top {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-bottom {
+    margin-top: 1.5rem;
 }
 
 .footer-wrapper h1 {
@@ -25,4 +41,29 @@
 
 .footer-wrapper ul li a {
     padding: 2rem;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-sections {
+    text-align: left;
+}
+
+.footer-sections h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.footer-sections h3 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#footer-logo{
+    font-size: 2.5rem;
+    margin-bottom: 0;
 }
