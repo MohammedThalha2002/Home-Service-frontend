@@ -70,7 +70,9 @@ function Cleaner() {
                 <div className="job-description">
                     <h2>"{data.desc}"</h2>
                 </div>
-                <button className="hire-me-btn" onClick={(e) => sendEmail(data.email)}>
+                <button className="hire-me-btn" onClick={(e) => sendEmail(data.email).then(res => {
+                    console.log("SUCCESS")
+                })}>
                     Hire me
                 </button>
             </div>

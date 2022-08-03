@@ -15,24 +15,20 @@ function Contacts() {
         const newData = { ...formValue }
         newData[e.target.id] = e.target.value;
         setformValue(newData)
-        console.log(newData)
+        console.log(formValue)
     }
 
-    const submit = async (e) => {
+    const submitFrom = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:5000/contact", {
-                params: {
-                    name : formValue.name,
-                    message: formValue.suggestions,
-                    email: formValue.email 
-                }
-            }).then((res) => {
-                if(res === "success"){
-                    alert("Mail Sent Successfully")
-                } else {
-                    alert("Something went wrong")
-                }
+            await axios({
+                method: "post",
+                url: "https://formspree.io/f/xzbwpajn",
+                data: formValue
+            }).then(res => {
+                console.log(res.status)
+                alert("Thank You for your Feedback")
+                navigate("/home")
             })
         } catch (error) {
             console.log(error)
@@ -42,7 +38,7 @@ function Contacts() {
     return (
         <section class="handyform">
             <div class="handyform-head">
-                <form onSubmit={(e) => submit}>
+                <form onSubmit={(e) => submitFrom(e)}>
                     <div class="name-form form">
                         <label for="name" >Name : </label>
                         <br />
